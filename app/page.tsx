@@ -74,7 +74,7 @@ export default function Home() {
                 </p>
                 <p className="text-sm text-slate-500">15/08/2023 - 10:45</p>
               </div>
-              <div className="w-48 h-24 foto bg-clip-padding md:mb-2 md:h-32 md:w-full">
+              <div className="w-48 h-24 foto bg-clip-padding md:mb-2 md:h-32 md:w-full lg:h-48">
                 <img
                   src="https://img.freepik.com/free-photo/abstract-background-with-low-poly-design_1048-8478.jpg?w=1800&t=st=1696987264~exp=1696987864~hmac=eed4b98a4303e206b1b388a7a1de710e21b181d1fa7511187e10873217f30b25"
                   alt=""
@@ -89,7 +89,7 @@ export default function Home() {
                 </p>
                 <p className="text-sm text-slate-500">15/08/2023 - 10:45</p>
               </div>
-              <div className="w-48 h-24 foto bg-clip-padding md:mb-2 md:h-32 md:w-full">
+              <div className="w-48 h-24 foto bg-clip-padding md:mb-2 md:h-32 md:w-full lg:h-48">
                 <img
                   src="https://img.freepik.com/free-photo/abstract-background-with-low-poly-design_1048-8478.jpg?w=1800&t=st=1696987264~exp=1696987864~hmac=eed4b98a4303e206b1b388a7a1de710e21b181d1fa7511187e10873217f30b25"
                   alt=""
@@ -104,7 +104,7 @@ export default function Home() {
                 </p>
                 <p className="text-sm text-slate-500">15/08/2023 - 10:45</p>
               </div>
-              <div className="w-48 h-24 foto bg-clip-padding md:mb-2 md:h-32 md:w-full">
+              <div className="w-48 h-24 foto bg-clip-padding md:mb-2 md:h-32 md:w-full lg:h-48">
                 <img
                   src="https://img.freepik.com/free-photo/abstract-background-with-low-poly-design_1048-8478.jpg?w=1800&t=st=1696987264~exp=1696987864~hmac=eed4b98a4303e206b1b388a7a1de710e21b181d1fa7511187e10873217f30b25"
                   alt=""
