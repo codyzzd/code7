@@ -1,7 +1,28 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@keyframes logoloop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.logos {
+}
+.logoloop {
+  animation: logoloop 24s linear infinite;
+  -webkit-animation: logoloop 24s linear infinite;
+}
+.svgimg {
+  /*height: 2.2rem;*/
+}
+
+/*
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -25,3 +46,4 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+*/
