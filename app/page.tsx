@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
+import Button from "./comps/Button";
+import LinkFooter from "./comps/link_footer";
 
 export default function Home() {
   return (
@@ -33,9 +36,9 @@ export default function Home() {
 
           <div className="space-x-4 buttons">
             <a href="/">Entrar</a>
-            <a className="inline-block whitespace-nowrap rounded-sm bg-blue-600 px-6 py-3 font-medium text-white shadow-[0_4px_4px_rgba(8,8,8,0.08),0_6px_12px_rgba(8,8,8,0.12),inset_0_1px_1px_rgba(255,255,255,0.5),inset_0_6px_12px_rgba(255,255,255,0.12)]">
-              Começar
-            </a>
+            <Link href="/start">
+              <Button>Começar</Button>
+            </Link>
           </div>
         </nav>
       </header>
@@ -48,16 +51,16 @@ export default function Home() {
             </h1>
             <h2 className="mb-6">
               Impulsione a comunicação com eficiência, atendendo aos mais altos
-              padrões de compliance e segurança.{" "}
+              padrões de compliance e segurança.
               <span className="hidden md:inline">
                 Nossas soluções omnichannel e chatbot são projetadas para sua
                 tranquilidade e excelência operacional.
               </span>
             </h2>
           </div>
-          <button className="whitespace-nowrap rounded-sm bg-blue-600 px-6 py-3 font-medium text-white shadow-[0_4px_4px_rgba(8,8,8,0.08),0_6px_12px_rgba(8,8,8,0.12),inset_0_1px_1px_rgba(255,255,255,0.5),inset_0_6px_12px_rgba(255,255,255,0.12)]">
-            Começar
-          </button>
+          <Link href="/start">
+            <Button>Começar</Button>
+          </Link>
         </div>
       </section>
       {/* blog */}
@@ -66,7 +69,7 @@ export default function Home() {
           <h1 className="mb-6 text-2xl font-bold tracking-tighter">
             Fique por dentro
           </h1>
-          <div className="flex-col mb-3 space-y-4 posts md:grid md:grid-cols-3 md:gap-4 md:space-y-0">
+          <div className="flex-col mb-8 space-y-4 posts md:grid md:grid-cols-3 md:gap-4 md:space-y-0">
             <div className="flex space-x-4 post md:flex-col md:space-x-0">
               <div className="grow md:order-2">
                 <p className="mb-2 font-bold tracking-tight">
@@ -115,9 +118,9 @@ export default function Home() {
           </div>
 
           <div className="w-full">
-            <a className="mt-3 inline-block min-w-full whitespace-nowrap rounded-sm bg-blue-600 px-6 py-3 text-center font-medium text-white shadow-[0_4px_4px_rgba(8,8,8,0.08),0_6px_12px_rgba(8,8,8,0.12),inset_0_1px_1px_rgba(255,255,255,0.5),inset_0_6px_12px_rgba(255,255,255,0.12)] md:min-w-min">
-              Ir para o Blog
-            </a>
+            <Link href="/start">
+              <Button>Ir para o Blog</Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -191,16 +194,18 @@ export default function Home() {
       <section className="py-8 bg-blue-600 lg:py-16">
         <div className="container px-4 mx-auto md:flex md:items-center lg:px-24">
           <div className="textos grow">
-            <h1 className="mb-2 text-4xl font-bold tracking-tighter text-white">
+            <h1 className="mb-2 text-4xl font-bold tracking-tighter text-white lg:text-6xl">
               Escale seu atendimento
             </h1>
-            <h2 className="mb-6 text-white md:mb-0">
+            <h2 className="mb-6 text-white md:mb-0 md:text-xl">
               A plataforma já existe você só não usa ainda.
             </h2>
           </div>
-          <a className="inline-block w-full whitespace-nowrap rounded-sm bg-white px-6 py-3 text-center font-medium text-blue-600 shadow-[0_4px_4px_rgba(8,8,8,0.08),0_6px_12px_rgba(8,8,8,0.12),inset_0_1px_1px_rgba(255,255,255,0.5),inset_0_6px_12px_rgba(255,255,255,0.12)] md:h-fit md:w-fit">
-            <i className="fa-solid fa-phone me-2"></i>Agende uma Demonstração
-          </a>
+          <Link href="/start">
+            <Button color="white">
+              <i className="fa-solid fa-phone me-2"></i>Agende uma Demonstração
+            </Button>
+          </Link>
         </div>
       </section>
       {/* numeros */}
@@ -255,70 +260,178 @@ export default function Home() {
               <p className="text-2xl font-semibold tracking-[-0.075em]">
                 code7
               </p>
-              <p className="">Reiventamos a forma de comunicar</p>
+              <p className="text-slate-300">Reiventamos a forma de comunicar</p>
             </ul>
             <ul className="flex space-x-4 text-2xl socialmediaicons">
               <li>
-                <i className="fa-brands fa-whatsapp"></i>
+                <Link href="/">
+                  <LinkFooter size="xl2">
+                    <i className="fa-brands fa-whatsapp"></i>
+                  </LinkFooter>
+                </Link>
               </li>
               <li>
-                <i className="fa-brands fa-facebook"></i>
+                <Link href="/">
+                  <LinkFooter size="xl2">
+                    <i className="fa-brands fa-facebook"></i>
+                  </LinkFooter>
+                </Link>
               </li>
               <li>
-                <i className="fa-brands fa-linkedin"></i>
+                <Link href="/">
+                  <LinkFooter size="xl2">
+                    <i className="fa-brands fa-linkedin"></i>
+                  </LinkFooter>
+                </Link>
               </li>
               <li>
-                <i className="fa-brands fa-spotify"></i>
+                <Link href="/">
+                  <LinkFooter size="xl2">
+                    <i className="fa-brands fa-spotify"></i>
+                  </LinkFooter>
+                </Link>
               </li>
               <li>
-                <i className="fa-brands fa-youtube"></i>
+                <Link href="/">
+                  <LinkFooter size="xl2">
+                    <i className="fa-brands fa-youtube"></i>
+                  </LinkFooter>
+                </Link>
               </li>
               <li>
-                <i className="fa-brands fa-instagram"></i>
+                <Link href="/">
+                  <LinkFooter size="xl2">
+                    <i className="fa-brands fa-instagram"></i>
+                  </LinkFooter>
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="space-y-8 links md:grid md:grid-cols-3 md:space-y-0">
             <ul className="space-y-2">
-              <li className="font-bold tracking-widest uppercase text-slate-500">
+              <li className="font-bold tracking-widest uppercase text-slate-300">
                 Plataforma
               </li>
-              <li>Omni</li>
-              <li>Bot</li>
-              <li>Journey</li>
-              <li>Dialer</li>
-              <li>API</li>
-            </ul>
-            <ul className="space-y-2">
-              <li className="font-bold tracking-widest uppercase text-slate-500">
-                Recursos
+              <li>
+                <Link href="/">
+                  <LinkFooter>Omni</LinkFooter>
+                </Link>
               </li>
-              <li>Blog</li>
-              <li>Cases</li>
-              <li>Materiais ricos</li>
-              <li>Code7 Academy</li>
-              <li>Integrações</li>
-              <li>Central de ajuda</li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Bot</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Journey</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Dialer</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>API</LinkFooter>
+                </Link>
+              </li>
             </ul>
             <ul className="space-y-2">
-              <li className="font-bold tracking-widest uppercase text-slate-500">
+              <li className="font-bold tracking-widest uppercase text-slate-300">
+                Recurso
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Blog</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Cases</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Materiais ricos</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Code7 Academy</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter> Integrações</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Central de ajuda</LinkFooter>
+                </Link>
+              </li>
+            </ul>
+            <ul className="space-y-2">
+              <li className="font-bold tracking-widest uppercase text-slate-300">
                 Empresa
               </li>
-              <li>Quem somos</li>
-              <li>Imprensa</li>
-              <li>Eventos</li>
-              <li>Carreiras</li>
-              <li>Fale Conosco</li>
-              <li>Mapa do site</li>
-              <li>Diversidade e inclusão</li>
+              <li>
+                <Link href="/">
+                  <LinkFooter> Quem somos</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Imprensa</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Eventos</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Carreiras</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Fale Conosco</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Mapa do site</LinkFooter>
+                </Link>
+              </li>
+              <li>
+                <Link href="/">
+                  <LinkFooter>Diversidade e inclusão</LinkFooter>
+                </Link>
+              </li>
             </ul>
           </div>
           <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 md:col-span-4" />
           <ul className="space-y-2 md:flex md:w-full md:space-x-8 md:space-y-0 md:[&_li]:whitespace-nowrap">
-            <li>Termos de uso</li>
-            <li>Politica de privacidade</li>
-            <li>Politica de cookies</li>
+            <li>
+              <Link href="/">
+                <LinkFooter> Termos de uso</LinkFooter>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <LinkFooter> Politica de privacidade</LinkFooter>
+              </Link>
+            </li>
+            <li>
+              <Link href="/">
+                <LinkFooter> Politica de cookies</LinkFooter>
+              </Link>
+            </li>
           </ul>
         </div>
       </footer>
